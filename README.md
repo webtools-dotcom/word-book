@@ -3,7 +3,7 @@
 Offline Android vocabulary notebook with flashcard revision, daily auto-backup to `Download/WordBook/`, and in-app updates from this repo's GitHub Releases.
 
 ## Install
-Download `app-release.apk` from the [latest release](../../releases/latest) on the phone and open it.
+Download the `.apk` from the [latest release](../../releases/latest) on the phone and open it.
 
 ## Releasing an update
 1. In `app/build.gradle.kts` bump `versionCode` (+1) and `versionName` (e.g. `1.1`).
