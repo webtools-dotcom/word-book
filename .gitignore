@@ -1,0 +1,8 @@
+.gradle/
+build/
+.idea/
+*.iml
+local.properties
+# signing secrets: NEVER commit these
+keystore.properties
+*.jks
