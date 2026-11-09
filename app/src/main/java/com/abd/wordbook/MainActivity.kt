@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         store = Store(this)
-        setContent { AppTheme { App(store) } }
+        setContent { AppTheme { Root(store) } }
     }
 
     // Leaving the app = backup moment.

@@ -10,4 +10,7 @@ Download the `.apk` from the [latest release](../../releases/latest) on the phon
 2. Build: `./gradlew assembleRelease` (needs `keystore.properties` + the signing key, which are NOT in this repo).
 3. Publish: `gh release create v1.1 app/build/outputs/apk/release/app-release.apk --title "v1.1" --notes "What changed"`
 
-The app shows the release notes in its update popup. Always sign with the same key, or updates won't install over the old app.
+The app shows the release notes in its update popup.
+
+## Updating practice questions (no app release needed)
+The Practice tab downloads `packs/pack.json` from this repo's `main` branch each time it opens. To ship new questions, regenerate the pack (`python make_pack.py` in the questions project, bumping `PACK_ID` for a new set), then commit and push `packs/pack.json`. Phones pick it up on their next open. Answers are kept per pack id. Always sign with the same key, or updates won't install over the old app.

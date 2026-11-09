@@ -1,0 +1,7 @@
+<resources>
+    <!-- DayNight so the window and the Practice WebView's prefers-color-scheme follow the phone's dark/light setting -->
+    <style name="AppTheme" parent="android:Theme.DeviceDefault.DayNight">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
